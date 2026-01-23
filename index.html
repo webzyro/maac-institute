@@ -152,6 +152,7 @@
                     class="form-control"
                     id="name"
                     name="name"
+                    autocomplete="off"
                     required
                   />
                 </div>
@@ -160,6 +161,7 @@
                   <input
                     type="tel"
                     class="form-control"
+                    autocomplete="off"
                     id="phone"
                     name="phone"
                     title="Phone number must be 10 to 12 digits"
@@ -189,6 +191,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    autocomplete="off"
                     id="city"
                     name="city"
                     required
@@ -619,6 +622,121 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section py-5">
+        <div class="container-fluid px-2 px-lg-5">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">
+              Get In Touch
+              <span class="text-gradient-purple">With Us</span>
+            </h2>
+            <p class="section-subtitle text-white-50 mx-auto">
+              Choose from industry-leading courses designed to transform your
+              creative passion into a professional career
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="contact-form-card2">
+                <div class="contact-header mb-4">
+                  <span class="contact-tag">Contact us</span>
+                  <h2 class="contact-title">
+                    Get in touch with our experts team
+                  </h2>
+                </div>
+                <form id="mainContactForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control contact-input"
+                        placeholder="First Name"
+                        name="first_name"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control contact-input"
+                        placeholder="Last Name"
+                        name="last_name"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="tel"
+                        class="form-control contact-input"
+                        placeholder="Phone Number"
+                        name="phone"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control contact-input"
+                        placeholder="Email Address"
+                        name="email"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <select
+                        class="form-select contact-input"
+                        name="course"
+                        id="course"
+                        required
+                      >
+                        <option value="">Select Course</option>
+                        <option value="">Animation</option>
+                        <option value="">VFX</option>
+                        <option value="">Creative Media</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control contact-input"
+                        rows="4"
+                        placeholder="How Can We Help?"
+                        name="message"
+                        autocomplete="off"
+                      ></textarea>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <button type="submit" class="btn-submit-pill">
+                        <span>Submit your Form</span>
+                        <div class="arrow-circle">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="map-wrapper shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.454312181564!2d85.10742137474139!3d25.623043114322094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x861a64cc4e301c33%3A0xe17e99fff75a1d2b!2sWebzyro%20Digital%20Technologies%20-%20Best%20Digital%20Marketing%20Company%20Agency%20in%20Patna%20%7C%20Website%20Development%20%26%20SEO%20Company%20in%20Patna!5e0!3m2!1sen!2sin!4v1766215668336!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style="border: 0; border-radius: 24px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="footer-section pt-5 pb-3">
@@ -662,26 +780,62 @@
           <!-- Col 2: Quick Links -->
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h5 class="text-white fw-bold mb-4">Quick Links</h5>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Why Choose Us</a></li>
-              <li><a href="#">Achievements</a></li>
-              <li><a href="#">Infrastructure</a></li>
+            <ul class="list-unstyled footer-links ps-2">
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Home</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">About Us</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Courses</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Why Choose Us</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Achievements</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Infrastructure</a>
+              </li>
             </ul>
           </div>
 
           <!-- Col 3: Our Courses -->
           <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
             <h5 class="text-white fw-bold mb-4">Our Courses</h5>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">3D Animation</a></li>
-              <li><a href="#">Visual Effects (VFX)</a></li>
-              <li><a href="#">Filmmaking</a></li>
-              <li><a href="#">Gaming</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Graphic Design</a></li>
+            <ul class="list-unstyled footer-links ps-2">
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">3D Animation</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Visual Effects (VFX)</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Filmmaking</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Gaming</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Web Design</a>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-right text-cyan"></i
+                ><a href="#">Graphic Design</a>
+              </li>
             </ul>
           </div>
 

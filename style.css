@@ -483,6 +483,161 @@ a {
     color: #fff !important;
 }
 
+/* Contact Section */
+.contact-section {
+  background-color: #0f172a;
+}
+
+.contact-form-card2 {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.contact-tag {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.contact-tag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.contact-title {
+  color: #fff;
+  font-size: 2rem;
+  font-family: var(--logo-font);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.contact-input {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px !important;
+  padding: 15px 20px !important;
+  color: #fff !important;
+  font-size: 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.contact-input:focus {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: none !important;
+}
+
+select.contact-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 12px;
+}
+
+.btn-submit-pill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 10px 10px 25px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-submit-pill:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.arrow-circle {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a4d44;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-submit-pill:hover .arrow-circle {
+  transform: rotate(-45deg);
+}
+
+.map-wrapper {
+  background: #fff;
+  padding: 8px;
+  border-radius: 24px;
+  height: 550px;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+#mainContactForm select option {
+  background-color: #0f172a;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .contact-form-card2 {
+    padding: 35px;
+  }
+  
+  .contact-title {
+    font-size: 2.2rem;
+  }
+  
+  .map-wrapper {
+    height: 400px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-form-card2 {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+  
+  .contact-title {
+    font-size: 1.8rem;
+  }
+  
+  .btn-submit-pill {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
