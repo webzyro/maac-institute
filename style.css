@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+:root {
+  --primary-bg: #C40C0C; 
+  --brand-maac: #FF6500; 
+  --brand-patna: #CC561E; 
+  --btn-cyan: #F6CE71; 
+}
+
+body {
+  font-family: "Lora", serif !important;
+  background-color: #f8f9fa; /* Default light body background */
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Navbar container */
+.custom-navbar {
+  background-color: var(--primary-bg);
+  padding: 15px 0;
+}
+
+/* Branding */
+.navbar-brand {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.brand-maac {
+  color: #2b70fa; /* Or a gradient if possible, sticking to solid for simplicity first */
+  background: -webkit-linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 5px;
+}
+
+.brand-patna {
+  color: var(--brand-patna);
+}
+
+/* Logo Image placeholder if needed, though user said "only add text Maac Patna"
+   The image shows a graphic logo too, but user specific instructions take precedence 
+   "in brand logo only add text Maac Patna". I will stick to text as requested. */
+
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1.02rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--btn-cyan) !important;
+}
+
+/* CTA Button */
+.btn-cta {
+  background-color: var(--btn-cyan);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px 20px;
+  /* box-shadow: 0 0 10px rgba(0, 212, 255, 0.5); */
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.85)), url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-color: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  min-height: 85vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Badge */
+.badge-custom {
+  background: linear-gradient(90deg, #7c3aed, #db2777); /* Purple to Pink gradient */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: sans-serif; /* Match design badge font */
+}
+
+/* Titles */
+.hero-title {
+  font-size: 4rem; /* Large impact */
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(45deg, #06b6d4, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(45deg, #8b5cf6, #d946ef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #cbd5e1; 
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.text-cyan {
+  color: #06b6d4;
+}
+
+/* Hero Buttons */
+.btn-hero-primary {
+  background-color: var(--btn-cyan) !important; 
+  color: #000;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  transition: all 0.4s ease-in;
+}
+
+.btn-hero-primary:hover {
+  transform: translateY(-3px);
+  color: var(--primary-bg);
+}
+
+.btn-hero-secondary {
+  background-color: transparent;
+  border: 1px solid #475569;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  transition: all 0.3s;
+}
+
+.btn-hero-secondary:hover {
+  background-color: #1e293b;
+  border-color: #94a3b8;
+}
+
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #94a3b8;
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
+  40% {transform: translateX(-50%) translateY(-10px);}
+  60% {transform: translateX(-50%) translateY(-5px);}
+}
+
+#hero-form {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero-form h4 {
+    color: var(--brand-patna);
+    text-align: center;
+    font-weight: bold;
+}
+
+#hero-form .form-label {
+    color: white;
+}
+
+#hero-form input, select {
+    background-color: transparent;
+    border: 1px solid white;
+    caret-color: white;
+    color: white;
+}
+
+#hero-form input:focus, select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#hero-form select option {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+#hero-form button {
+    background-color: var(--brand-maac);
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in;
+}
+
+#hero-form button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Courses Section */
+.courses-section {
+  background-color: #0b1120; 
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  max-width: 700px;
+  font-size: 1rem;
+}
+
+.course-card {
+  background-color: #111827; /* Slightly lighter than section bg */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-img-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.course-card:hover .card-img-wrapper img {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 2rem;
+  letter-spacing: .7px;
+}
+
+.card-text {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #9ca3af !important;
+}
+
+.read-more-link {
+  color: var(--brand-patna) !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.read-more-link:hover {
+  color: #3b82f6 !important;
+  text-decoration: none;
+}
+
+/* About Page */
+.about-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+
+/* Updated About Section */
+.about-section {
+    background-color: #0f172a; 
+}
+
+.about-img-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.about-img.main-img {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    height: auto;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: linear-gradient(135deg, var(--brand-maac), #06b6d4);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(6, 182, 212, 0.4);
+    border: 5px solid #0f172a; /* Matches section bg to create cutout effect */
+    z-index: 2;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.about-points .fa-circle-check {
+    color: var(--brand-maac); /* Use Brand MAAC blue or Cyan */
+    filter: drop-shadow(0 0 5px rgba(0, 123, 255, 0.4));
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #0f172a;
+}
+
+.feature-card {
+  background-color: #111827;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid #1f2937;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--brand-maac), #06b6d4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(6, 182, 212, 0.4);
+}
+
+.feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.feature-description {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: var(--brand-patna);
+}
+
+#cta-text {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #050505; /* Deep black/dark background */
+    color: #fff;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--btn-cyan);
+    padding-left: 5px;
+}
+
+.footer-contact li {
+    font-size: 0.95rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #1f2937;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid #374151;
+}
+
+.social-icon:hover {
+    background-color: var(--brand-maac);
+    color: #fff;
+    transform: translateY(-3px);
+    border-color: var(--brand-maac);
+}
+
+.hover-white:hover {
+    color: #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  #cta-text {
+    max-width: 100%;
+  }
+}
+
+
