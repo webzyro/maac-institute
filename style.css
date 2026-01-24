@@ -20,17 +20,21 @@ a {
 
 /* Navbar container */
 .custom-navbar {
-  background-color: var(--primary-bg);
+  background-color: #1f2937;
   padding: 15px 0;
+  z-index: 999;
 }
 
 /* Branding */
 .navbar-brand {
-  font-weight: 800;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
+  width: 200px;
+  overflow: hidden;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand-maac {
