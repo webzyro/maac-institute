@@ -520,7 +520,6 @@ a {
 .contact-title {
   color: #fff;
   font-size: 2rem;
-  font-family: var(--logo-font);
   font-weight: 400;
   line-height: 1.2;
 }
@@ -596,10 +595,6 @@ select.contact-input {
   padding: 8px;
   border-radius: 24px;
   height: 550px;
-}
-
-.z-3 {
-  z-index: 3;
 }
 
 #mainContactForm select option {
