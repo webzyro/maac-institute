@@ -602,6 +602,11 @@ select.contact-input {
   color: #fff;
 }
 
+/* Faq Section */
+.faq-section {
+    background-color: #1f2937;
+}
+
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
   .contact-form-card2 {
